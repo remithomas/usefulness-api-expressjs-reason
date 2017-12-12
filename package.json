@@ -1,0 +1,36 @@
+{
+  "name": "usefulness-api-expressjs-reason",
+  "version": "1.0.0",
+  "description": "Usefulness API using ExpressJS by ReasonML",
+  "main": "index.js",
+  "author": "Remi THOMAS",
+  "keywords": [
+    "express",
+    "node",
+    "node.js",
+    "reason",
+    "bucklescript"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -clean-world && bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "npm run build && jest",
+    "serve": "node ./lib/js/src/server.js",
+    "serve:dev": "./node_modules/nodemon/bin/nodemon.js ./lib/js/src/server.js"
+  },
+  "dependencies": {
+    "bs-express": "^0.0.5",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "bs-jest": "^0.2.0",
+    "bs-platform": "^2.1.0",
+		"nodemon": "^1.12.5"
+  },
+  "engines": {
+    "node": ">= 8",
+    "yarn": "*"
+  }
+}

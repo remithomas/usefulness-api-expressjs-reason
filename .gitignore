@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Build
+lib/*
+!lib/js
+.merlin
+.env
+
+# Logs
+*.log
+
+# macOS
+.*DS_Store

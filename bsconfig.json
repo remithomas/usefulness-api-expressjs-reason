@@ -1,0 +1,29 @@
+{
+  "name": "usefulness-api-expressjs-reason",
+  "namespace": true,
+  "reason": {"react-jsx" : 2},
+  "bsc-flags": [
+    "-bs-no-version-header",
+    "-bs-super-errors"
+  ],
+  "bs-dependencies": [
+		"bs-express",
+		"bs-jest"
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs"
+    }
+  ],
+  "refmt": 3,
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+		},
+		{
+			"dir": "__tests__",
+			"subdirs": true
+		}
+  ]
+}
